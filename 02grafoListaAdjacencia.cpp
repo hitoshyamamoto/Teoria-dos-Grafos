@@ -8,7 +8,9 @@ struct no{
 typedef no * noptr;
 
 bool kregular (noptr grafo[], int ordem, int k){
-    int grau; noptr atual;
+    int grau;
+    noptr atual;
+    
     for(int i=0; i<ordem; i++){
         grau = 0;
         atual = grafo[i];
@@ -19,4 +21,12 @@ bool kregular (noptr grafo[], int ordem, int k){
         if(grau != k) return false;
     }
     return true;
+}
+
+int main(){
+    noptr Grafo[];
+
+    kregular(Grafo, 5, 5);
+    
+    return 0;
 }
