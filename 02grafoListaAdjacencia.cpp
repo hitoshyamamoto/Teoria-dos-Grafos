@@ -24,9 +24,6 @@ bool kregular (noptr grafo[], int ordem, int k){
 }
 
 int main(){
-    noptr Grafo[];
-
-    kregular(Grafo, 5, 5);
     
     return 0;
 }
